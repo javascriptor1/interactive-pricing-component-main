@@ -15,26 +15,39 @@
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
-    <h1>Simple, traffic-based pricing</h1>
-    <div>
-      <p>Sign-up for our 30-day trial.</p>
-      <p>No credit card required.</p>
-    </div>
+    <header class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <div>
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
+      </div>
+      <img src="images/pattern-circles.svg" alt="" />
+    </header>
 
     <main>
-      <div>
+      <!-- define grid container  -->
+      <div class="container">
+        <!-- First grid member -->
         <p>100k Pageviews</p>
+        <!-- Second grid member  -->
+        <div class="slider-div">
+          <div class="slider-icon-circle">
+            <img src="images/icon-slider.svg" alt="" />
+          </div>
+        </div>
+        <!-- Third grid member -->
         <p>
-          $<span>16.00</span>
-          <span>/ month</span>
+          $<span class="amount">16.00</span>
+          <span class="period">/ month</span>
         </p>
-      </div>
-      <div>
-        <label for="checkbox">Monthly Billing</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox">Yearly Billing</label>
-        <p class="discoint-desktop">25% discount</p>
-        <p>-25%</p>
+        <!-- Forth grid member -->
+        <div class="billing-div">
+          <label for="checkbox">Monthly Billing</label>
+          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox"/>
+          <label for="checkbox">Yearly Billing</label>
+          <p class="discount-desktop">25% discount</p>
+          <p class="discount-mobile">-25%</p>
+        </div>
       </div>
       <div>
         <ul>
