@@ -101,7 +101,7 @@ span.period {
   font-size: 14px;
   position: relative;
   top: -6px;
-  left: 2px;
+  left: -1px;
 }
 .discount-desktop {
   display: none;
@@ -208,7 +208,7 @@ ul {
 }
 
 .btn-div button {
-  margin-top: 22px;
+  margin-top: 23px;
   padding: 12px 46px;
   border-radius: 999px;
   border: none;
