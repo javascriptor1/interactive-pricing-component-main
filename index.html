@@ -30,10 +30,16 @@
         <!-- First grid member -->
         <p>100k Pageviews</p>
         <!-- Second grid member  -->
-        <div class="slider-div">
-          <div class="slider-icon-circle">
-            <img src="images/icon-slider.svg" alt="" />
-          </div>
+        <div>
+          <input
+            type="range"
+            min="8"
+            max="36"
+            value="16"
+            class="slider"
+            id="range"
+            title="price range slider"
+          />
         </div>
         <!-- Third grid member -->
         <p>
@@ -43,12 +49,18 @@
         <!-- Forth grid member -->
         <div class="billing-div">
           <label for="checkbox">Monthly Billing</label>
-          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox"/>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="checkbox"
+          />
           <label for="checkbox">Yearly Billing</label>
           <p class="discount-desktop">25% discount</p>
           <p class="discount-mobile">-25%</p>
         </div>
       </div>
+      <!-- define grid container  -->
       <div class="features-div">
         <!-- First grid member -->
         <ul>
