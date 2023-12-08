@@ -27,6 +27,9 @@ h1 {
   margin-bottom: 10px;
 }
 
+hr{
+  display: none;
+}
 header p {
   font-size: 13px;
 }
@@ -51,7 +54,7 @@ main {
   box-shadow: 0px 10px 5px 2px #f3f3f3;
 }
 
-main p:nth-of-type(1) {
+.views {
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -59,6 +62,7 @@ main p:nth-of-type(1) {
   position: relative;
   top: 1px;
   right: 1px;
+  color: hsl(225, 20%, 60%);
 }
 .container {
   display: grid;
@@ -72,7 +76,6 @@ main p:nth-of-type(1) {
   width: 100%;
   border-radius: 12px;
   background: hsl(224, 65%, 95%);
- 
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -85,7 +88,7 @@ main p:nth-of-type(1) {
   background-image: url("images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
-   box-shadow: 0px 6px 30px 2px hsl(174, 86%, 45%);
+  box-shadow: 0px 6px 30px 2px hsl(174, 86%, 45%);
 }
 
 header div {
@@ -97,17 +100,21 @@ main p:nth-child(3) {
   font-size: 32px;
   font-weight: 800;
   margin-top: 2px;
+  color: hsl(227, 35%, 25%);
 }
 span.period {
   font-size: 14px;
   position: relative;
   top: -6px;
   left: -1px;
+  color: hsl(225, 20%, 60%);
 }
-.discount-desktop {
+/* .discount-desktop {
+  display: none;
+} */
+.discount {
   display: none;
 }
-
 .billing-div {
   display: flex;
   align-items: center;
@@ -258,7 +265,6 @@ ul {
     justify-content: start;
     align-items: center;
     row-gap: 48px;
-
   }
   .container p:first-child {
     grid-column: 1 / 2;
@@ -310,6 +316,20 @@ ul {
     justify-content: center;
     padding: 36px 0;
     margin: 0;
+    border-top: 0;
+    position: relative;
+  }
+  span.discount {
+    display: inline;
+    text-transform: lowercase;
+    color: hsl(15, 100%, 70%);
+  }
+  .features-div hr {
+    display: block;
+    position: absolute;
+    top: 10px;
+    border: 1px solid #edf0f9;
+    width: 100%;
   }
   main ul {
     margin-inline-start: 0px;
@@ -329,5 +349,6 @@ ul {
   }
   .billing-div {
     justify-content: center;
+    margin-left: 46px;
   }
 }
