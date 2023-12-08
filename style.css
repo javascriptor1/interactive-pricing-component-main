@@ -27,7 +27,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-hr{
+hr {
   display: none;
 }
 header p {
@@ -273,7 +273,7 @@ ul {
     letter-spacing: 2px;
     left: 22px;
     top: -9px;
-}
+  }
   .container div:nth-child(2) {
     grid-column: 1 / -1;
     width: 90%;
@@ -351,4 +351,29 @@ ul {
     justify-content: center;
     margin-left: 46px;
   }
+}
+
+/* Active state Elements styling */
+
+.slider::-webkit-slider-thumb:hover {
+  background: hsl(174, 77%, 80%);
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider::-webkit-slider-thumb:active {
+  background: #23aea1;
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-div button:hover {
+  color: #fff;
+  font-weight: 800;
+}
+.checkbox:hover  {
+  cursor: pointer;
+  background-color: hsl(174, 77%, 80%);
+  ;
 }
