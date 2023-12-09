@@ -12,11 +12,17 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
     <header class="header">
-      <h1>Simple, traffic-based pricing</h1>
+      <h1 class="animate__animated animate__slideInDown">
+        Simple, traffic-based pricing
+      </h1>
       <div>
         <p>Sign-up for our 30-day trial.</p>
         <p>No credit card required.</p>
@@ -30,7 +36,7 @@
         <!-- First grid member -->
         <p class="views" id="views">100k Pageviews</p>
         <!-- Second grid member  -->
-        <div>
+        <div class="animate__animated animate__jackInTheBox">
           <input
             type="range"
             min="0"
