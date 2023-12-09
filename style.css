@@ -247,7 +247,7 @@ ul {
   header {
     padding: 22px 0;
     margin: 0;
-    top: -56px;
+    top: -105px;
   }
   h1 {
     font-size: 28px;
@@ -265,7 +265,7 @@ ul {
     margin: 0;
     padding: 48px 0 0;
     position: relative;
-    top: 7px;
+    top: -50px;
   }
   .container {
     grid-template: repeat(3, auto) / repeat(2, 50%);
